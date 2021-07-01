@@ -423,8 +423,8 @@ void WifiConnectTask(void *pvParameters)  // This is a task.
         delay(3000);
       }  // Connect to WPA/WPA2 network. Change this line if using open or WEP network
       noInternet = false;
-      send_logs();
-      deleteLog();
+      //send_logs();
+      //deleteLog();
       // and get the time
       configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
       lastUpdateTime = millis();
